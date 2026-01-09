@@ -1,0 +1,28 @@
+@use "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: variables.$text;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+section {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: variables.$max-width;
+  margin: 0 auto;
+}

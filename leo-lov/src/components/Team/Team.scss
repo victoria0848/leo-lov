@@ -1,0 +1,81 @@
+@use "../../styles/variables";
+
+.team {
+  padding: 60px 20px;
+  max-width: variables.$max-width;
+  margin: 0 auto;
+
+  h3 {
+    text-align: center;
+    color: variables.$blue;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .team-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .member {
+      text-align: center;
+      padding: 20px;
+      width: 23%; 
+
+      // img {
+      //   width: 100px;
+      //   height: 100px;
+      //   border-radius: 50%;
+      //   margin-bottom: 15px;
+      // }
+
+      h4 {
+        margin-top: 6rem;
+        font-size: 18px;
+        color: variables.$blue;
+      }
+
+      .blue-line {
+        width: 11rem;
+        height: 8px;
+        background-color: variables.$dark-blue;
+        border-radius: 2px;
+      }
+
+      .description {
+        font-size: 14px;
+        color: variables.$gray;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+      }
+    }
+  }
+
+  // TABLET
+  @media (max-width: variables.$tablet) {
+    .team-grid {
+      flex-direction: column;
+      align-items: center;
+
+      .member {
+        width: 70%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  // MOBILE
+  @media (max-width: variables.$mobile) {
+    padding: 40px 10px;
+
+    .team-grid {
+      .member {
+        width: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../styles/variables";
+
+.services {
+  position: relative;
+  margin-top: -6rem; // 🔥 overlapper hero
+  padding-bottom: 4rem;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: grid;
+  gap: 1.5rem;
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border: 1px solid variables.$border;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  h3 {
+    color: variables.$blue;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    color: variables.$text;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,92 @@
+@use "../../styles/variables";
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid variables.$border;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: variables.$light;
+}
+
+nav {
+  display: none;
+
+  @media (min-width: variables.$desktop) {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: variables.$blue;
+    font-weight: 300;
+    padding: 0 1rem;
+    position: relative;
+
+    /* BLUE LINES */
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 25%;
+      height: 50%;
+      width: 2px;
+      background: variables.$blue;
+    }
+  }
+}
+
+/*  LOGO  */
+.logo {
+  color: variables.$blue;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* RESPONSIVE MENU */
+.burger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: variables.$desktop) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: variables.$blue;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+}
+
+/* MOBILE MENU */
+nav.open {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: variables.$light;
+  border-bottom: 1px solid variables.$border;
+
+  display: flex;
+  flex-direction: column;
+
+  a {
+    padding: 1rem;
+    border-bottom: 1px solid variables.$border;
+
+    &::after {
+      display: none; 
+    }
+  }
+}

@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+section {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+@use "../../styles/variables";
+
+.hero {
+  height: 65vh;
+  background: url("/images/Rectangle3.jpg") center/cover no-repeat;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding: 0;
+}
+
+.hero-box {
+  padding: 1rem 1.8rem;
+  
+  max-width: 500px;
+  margin-top: 0.8rem;
+
+  h1 {
+    color: variables.$light;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  span{
+    color: variables.$blue;
+  }
+  p {
+    color: variables.$light;
+  }
+}
