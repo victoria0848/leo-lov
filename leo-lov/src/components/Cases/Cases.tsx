@@ -5,7 +5,7 @@ export function Cases() {
     <section id="cases" className="cases">
       <article className="case">
         <div className="case-grid">
-          <img src="/images/Rectangle8.png" alt="Intet problem" />
+          <img src="/images/about.jpg" alt="Intet problem" />
 
           <div className="case-content">
             <h3>Intet problem</h3>
@@ -24,7 +24,7 @@ export function Cases() {
       
       <article className="case">
         <div className="case-grid reverse">
-          <img src="/images/Rectangle11.png" alt="Evig garanti" />
+          <img src="/images/about1.jpg" alt="Evig garanti" />
 
           <div className="case-content">
             <h3>Evig garanti</h3>

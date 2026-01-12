@@ -4,30 +4,38 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-grid">
-
-        <div>
+        <article>
           <h4>Adresse</h4>
           <p>Find os her:</p>
-          <p>Maldive rd. 22,<br/>Seychelle Islands</p>
-        </div>
+          <p>
+            Maldive rd. 22,<br />
+            Seychelle Islands
+          </p>
+        </article>
 
-        <div>
+        <article>
           <h4>Kontakt</h4>
           <p>Kontakt os her:</p>
-          <p>email@mail.dk<br/>Tlf: 01923023</p>
-        </div>
+          <p>
+            email@mail.dk<br />
+            Tlf: 01923023
+          </p>
+        </article>
 
-        <div>
+        <article>
           <h4>Politik</h4>
           <p>Vores politikker:</p>
-          <p>Privatlivspolitik<br/>Cookiepolitik<br/>Generalle betingelse</p>
-        </div>
+          <p>
+            Privatlivspolitik<br />
+            Cookiepolitik<br />
+            Generelle betingelser
+          </p>
+        </article>
 
-        <div>
+        <article>
           <h4>Følg os</h4>
           <p>📘<br />📸</p>
-        </div>
-
+        </article>
       </div>
     </footer>
   );

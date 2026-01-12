@@ -8,8 +8,8 @@ export function Navbar() {
     <header className="navbar">
       <nav className={open ? "open" : ""}>
         <a href="#services" onClick={() => setOpen(false)}>Hjem</a>
-        <a href="#cases" onClick={() => setOpen(false)}>Advokaterne</a>
-        <a href="#team" onClick={() => setOpen(false)}>Om LeoLov</a>
+        <a href="#cases" onClick={() => setOpen(false)}>Om LeoLov</a>
+        <a href="#team" onClick={() => setOpen(false)}>Advokaterne</a>
         <a href="#footer" onClick={() => setOpen(false)}>Kontakt</a>
       </nav>
 
